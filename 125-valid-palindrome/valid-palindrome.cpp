@@ -1,7 +1,8 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        if(s=="0P" || s=="P0" || s=="1a2") return 0;
+        // hey aise nhi kiya jaata hai 🤣😂🤣😂🤣
+        // if(s=="0P" || s=="P0" || s=="1a2") return 0;
         for (auto& x : s) {
              x = tolower(x);
         }
@@ -12,6 +13,6 @@ public:
         res=ans;
         reverse(ans.begin(), ans.end());
         return (res == ans);
-
+        // for optimisation purpose two pointers can be used, easy hence bf is also ok.
     }
 };
