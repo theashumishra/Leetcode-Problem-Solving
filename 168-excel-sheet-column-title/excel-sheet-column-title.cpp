@@ -1,4 +1,6 @@
 // After 26 character it is being repeated
+// Col-- in order to accomodate z char now think like digit extraction but by 26 and mapped 
+// value
 
 class Solution {
 public:
