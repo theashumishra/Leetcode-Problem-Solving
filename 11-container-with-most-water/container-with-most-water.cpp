@@ -6,17 +6,17 @@ public:
         int j = n-1;
         int area=0,maxi=0;
         int ht = min(height[i],height[j]);
-            int width = j-i;
-            area = ht*width;
-            maxi= max(area,maxi);
+           
             //i++; j--;
         while(i<j){
+            int width = j-i;
+            ht = min(height[i],height[j]);
+            area = ht*width;
+            maxi= max(area,maxi);
             if(height[i]<=height[j]) i++;
             else if(height[i]>height[j]) j--;
-             ht = min(height[i],height[j]);
-             width = j-i;
-             area = ht*width;
-             maxi= max(area,maxi);
+             
+           
         }
         return maxi;
     }
